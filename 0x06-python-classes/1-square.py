@@ -3,7 +3,7 @@
 This module defines a Square class and initialise its size
 """
 
-#this is the square implementation function
+
 class Square:
     """Square implementation
     """
