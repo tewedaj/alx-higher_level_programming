@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import sys
 
-# this is the safe function
+
 def safe_function(fct, *args):
 
     try:
