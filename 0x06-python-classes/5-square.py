@@ -5,11 +5,6 @@ This module defines a Square class
 Its implements value and type checks for its attributes
 """
 
-# this is another form of the square class
-# and this is object oriented approch
-# as i have wrote every function accepts the first parameter as self
-# which the classes instance
-
 class Square:
     """Square implementation
     """
