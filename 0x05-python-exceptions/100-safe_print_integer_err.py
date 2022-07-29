@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import sys
 
-#this is the safe print integer function
+
 def safe_print_integer_err(value):
     try:
         print('{:d}'.format(value))

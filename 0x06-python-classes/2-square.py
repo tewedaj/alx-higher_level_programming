@@ -5,7 +5,7 @@ This module defines a Square class
 Its implements value and type checks for its attributes
 """
 
-# this is another form of the square function
+
 class Square:
     """Square implementation
     """
