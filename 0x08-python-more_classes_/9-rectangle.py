@@ -14,7 +14,7 @@ class Rectangle:
     """
 
     number_of_instances = 0
-    print_symbol = '#'
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """
@@ -39,7 +39,7 @@ class Rectangle:
         """
 
         Rectangle.number_of_instances -= 1
-        print('Bye rectangle...')
+        print("Bye rectangle...")
 
     @property
     def width(self):
@@ -112,10 +112,10 @@ class Rectangle:
         """
 
         if self.__check_int_value(width) is False:
-            raise TypeError('width must be an integer')
+            raise TypeError("width must be an integer")
 
         if self.__check_positive_value(width) is False:
-            raise ValueError('width must be >= 0')
+            raise ValueError("width must be >= 0")
 
     def __check_valid_height(self, height):
         """
@@ -132,10 +132,10 @@ class Rectangle:
         """
 
         if self.__check_int_value(height) is False:
-            raise TypeError('height must be an integer')
+            raise TypeError("height must be an integer")
 
         if self.__check_positive_value(height) is False:
-            raise ValueError('height must be >= 0')
+            raise ValueError("height must be >= 0")
 
     def __check_int_value(self, value):
         """
@@ -212,7 +212,7 @@ class Rectangle:
 
         """
 
-        rect_str = ''
+        rect_str = ""
         w = self.__width
         h = self.__height
 
@@ -224,7 +224,7 @@ class Rectangle:
                 rect_str += str(self.print_symbol)
 
             if i != h - 1:
-                rect_str += '\n'
+                rect_str += "\n"
 
         return rect_str
 
@@ -249,10 +249,10 @@ class Rectangle:
         """
 
         if isinstance(rect_1, Rectangle) is False:
-            raise TypeError('rect_1 must be an instance of Rectangle')
+            raise TypeError("rect_1 must be an instance of Rectangle")
 
         if isinstance(rect_2, Rectangle) is False:
-            raise TypeError('rect_2 must be an instance of Rectangle')
+            raise TypeError("rect_2 must be an instance of Rectangle")
 
         rct1_area = rect_1.area()
         rct2_area = rect_2.area()
@@ -281,7 +281,7 @@ class Rectangle:
         Returns the representation of the Rectangle.
 
         """
-        w = str(eval('self.width'))
-        h = str(eval('self.height'))
+        w = str(eval("self.width"))
+        h = str(eval("self.height"))
 
-        return 'Rectangle(' + w + ', ' + h + ')'
+        return "Rectangle(" + w + ", " + h + ")"
